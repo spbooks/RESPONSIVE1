@@ -1,0 +1,23 @@
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+  #sponsors {
+    max-width: 960px;
+    width: 100%;
+  }
+
+  #sponsors ul li {
+    margin: 0 0.4% 1em 0.8%;
+    width: 31.5%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #sponsors {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  #sponsors ul li {
+    margin: 0 0.5% 1em 0.6%;
+    width: 23.5%;
+  }
+}

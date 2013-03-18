@@ -1,0 +1,711 @@
+@font-face {
+  font-family: 'Helvetica Light';
+  src: local("Helvetica Neue CE 45 Light"), local("Helvetica Neue LT 45 Light"), local("Helvetica Neue 45 Light"), local("Helvetica Neue Light"), local("HelveticaNeue CE 45 Light"), local("HelveticaNeue LT 45 Light"), local("HelveticaNeue 45 Light"), local("HelveticaNeue Light"), local("HelveticaNeue-Light"), local("Helvetica CE 45 Light"), local("Helvetica LT 45 Light"), local("Helvetica 45 Light"), local("Helvetica Light"), local("Helvetica-Light");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font: 15px/1.333em "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  background: #211f23;
+  color: #fafeff;
+}
+a {
+  text-decoration: none;
+  color: #39c;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #fafeff;
+  background: #39c;
+}
+header {
+  font: 1.933em/1.034em "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: -.02em;
+  color: #fafeff;
+  position: relative;
+  height: 140px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .url:hover, header .url:focus {
+  background: 0;
+}
+header .summary {
+  margin-top: 20px;
+}
+header p {
+  font-size: .5em;
+  line-height: 1.333em;
+  font-weight: inherit;
+  margin-left: 150px;
+}
+nav {
+  position: absolute;
+  top: 1em;
+  left: 320px;
+  width: 480px;
+}
+nav a {
+  display: block;
+  position: absolute;
+  color: #fafeff;
+  vertical-align: bottom;
+  padding: 0 5px 1px;
+  margin-left: -5px;
+}
+nav .active a, nav .active a:hover, nav .active a:focus {
+  background: #000;
+  background: rgba(33, 31, 35, .7);
+}
+nav a:hover, nav a:focus, nav .active {
+  background: #000;
+  background: rgba(33, 31, 35, .7);
+}
+#skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#speakers-sessions {
+  max-width: 145px;
+  left: 0;
+  text-indent: -.8em;
+}
+#speakers-sessions .amp {
+  float: left;
+  width: .3em;
+  margin: 1em .5em 0 0;
+  position: relative;
+  left: .8em;
+}
+#workshops {
+  left: 160px;
+  top: 1em;
+}
+#social {
+  left: 320px;
+  top: 1em;
+}
+#schedule, #venue, #pricing, #register, #promotion {
+  font-size: .621em;
+  padding-bottom: 0;
+  font-weight: inherit;
+}
+#schedule {
+  left: 160px;
+}
+#venue {
+  left: 250px;
+}
+#pricing {
+  left: 320px;
+}
+#register {
+  left: 320px;
+  top: 5em;
+  margin-left: 0;
+  width: 150px;
+  text-align: center;
+  padding: 0 5px;
+  background: #39c;
+  color: #fafeff;
+}
+#register:hover, #register:focus {
+  background: #fafeff;
+  color: #39c;
+}
+#promotion {
+  left: 320px;
+  top: 8.4em;
+  margin: 10px 0 0 0;
+  padding: 2px 5px;
+  background: rgba(33,31,35,.7);
+  width: 150px;
+  font-size: .9em;
+  text-align: center;
+  color: #e0e0e0;
+  z-index: 9;
+}
+#promotion:hover {
+  background: #39c;
+}
+#intro {
+  width: 480px;
+  margin: 0 auto;
+  padding-right: 320px;
+  position: relative;
+}
+.workshopstemplate #intro {
+  width: 640px;
+  padding-right: 160px;
+}
+h1 {
+  font: 3em/1em "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-stretch: condensed;
+  padding-top: 2.444em;
+  color: #fff;
+  width: 100%;
+  margin-bottom: .5em;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+#intro p, #intro li {
+  color: #fefeff;
+  font: 2em/1.666em "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  background: #000;
+  background: rgba(33, 31, 35, .7);
+  display: inline;
+  padding-bottom: .1em;
+  box-shadow: .25em 0 0 rgba(33, 31, 35, .7), -.25em 0 0 rgba(33, 31, 35, .7);
+  -moz-box-shadow: .25em 0 0 rgba(33, 31, 35, .7), -.25em 0 0 rgba(33, 31, 35, .7);
+  -webkit-box-shadow: .25em 0 0 rgba(33, 31, 35, .7), -.25em 0 0 rgba(33, 31, 35, .7);
+  -o-box-shadow: .25em 0 0 rgba(33, 31, 35, .7), -.25em 0 0 rgba(33, 31, 35, .7);
+  -ms-box-shadow: .25em 0 0 rgba(33, 31, 35, .7), -.25em 0 0 rgba(33, 31, 35, .7);
+}
+#intro a {
+  padding-bottom: .1em;
+}
+#intro li {
+/*    margin-right: 800px;*/
+}
+#intro li a {
+  display: inline-block;
+}
+#intro a:hover, #intro a:focus {
+  background: #39c;
+  padding-bottom: .1em;
+  box-shadow: .25em 0 0 #39c, -.25em 0 0 #39c;
+  -moz-box-shadow: .25em 0 0 #39c, -.25em 0 0 #39c;
+  -webkit-box-shadow: .25em 0 0 #39c, -.25em 0 0 #39c;
+}
+#intro .actions {
+  visibility: hidden;
+  background: 0;
+  position: absolute;
+  left: 0;
+  font: .6em/2.777em "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  margin-top: -8.333em;
+}
+#intro .actions a {
+  visibility: visible;
+  display: block;
+  width: 240px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  left: 560px;
+  text-transform: capitalize;
+  background: #39c;
+  color: #fafeff;
+  border-bottom: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#intro .actions a:hover, #intro .actions a:focus {
+  background: #fafeff;
+  color: #39c;
+  border-bottom: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.home ol.intro li:first-child a:after {
+  content: "new";
+  display: inline-block;
+  position: relative;
+  top: -1.5em;
+  right: -2em;
+  margin-left: -3em;
+  font-size: .5em;
+  line-height: 1em;
+  font-weight: bold;
+  width: 3em;
+  height: 1.25em;
+  text-align: center;
+  background: #ed1c24;
+  border-radius: 2em;
+  -webkit-transform: rotate(5deg);
+  color: #fafeff;
+}
+
+#content {
+  width: 100%;
+  margin: 2em auto 0 auto;
+  position: relative;
+}
+h2 {
+  font: 2.667em/1em "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #6c6c6f;
+}
+.speakerssessionstemplate h2 {
+  font: 6.5em/.7em "Helvetica Neue CE 25 Ultralight", "Helvetica Neue LT 25 Ultralight", "Helvetica Neue 25 Ultralight", "HelveticaNeue-Ultralight", "HelveticaNeue CE 25 UltLight", "HelveticaNeue LT 25 UltLight", "HelveticaNeue 25 UltLight", "Helvetica Neue Ultralight", "Helvetica CE 25 Ultralight", "Helvetica LT 25 Ultralight", "Helvetica 25 Ultralight", "Helvetica-Ultralight", "Helvetica Ultralight", "Helvetica CE 25 UltLight", "Helvetica LT 25 UltLight", "Helvetica 25 UltLight", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  margin: 0;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: top right;
+  -moz-transform: rotate(-90deg);
+  -moz-transform-origin: top right;
+  -o-transform: rotate(-90deg);
+  -o-transform-origin: top right;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin: top right;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  text-align: right;
+  right: 102%;
+  z-index: 99;
+}
+
+#bigpic-title {
+  width: 5em;
+}
+#w3c-title {
+  margin-top: -.75em;
+}
+h3 {
+  font: 2em/1em "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #fafeff;
+  clear: both;
+  margin: .9em 0 .1em 0;
+}
+
+.session-info {
+  position: relative;
+  clear: both;
+  margin: 0 0 0 80px;
+  padding: 0 0 2.666em 0;
+  border-bottom: 1px solid #514f53;
+  max-height: 6em;
+  background: #211f23;
+  overflow: hidden;
+  height: auto;
+  -webkit-transition: max-height 2s, border-bottom-color .5s, background 1s;
+  -moz-transition: max-height 2s, background 1s;
+  -o-transition: max-height 2s, background 1s;
+  -ms-transition: max-height 2s, background 1s;
+  transition: max-height 2s, border-bottom-color .5s, background 1s;
+}
+.session-info:hover {
+  border-bottom-color: #716f73;
+  background: #39c;
+}
+.session-info:after {
+  position: absolute;
+  top: 10px;
+  left: 315px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #514f53;
+}
+.session-info h3 {
+  padding-left: 160px;
+}
+.session-info h3:hover, .session-info:hover .photo {
+  cursor: pointer;
+}
+.session-info h3+h3 {
+  margin-top: 0;
+}
+.session-info .fn {
+  color: #39c;
+  font: 1.75em/1em "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s; }
+.session-info:hover .fn {
+  color: #fafeff; }
+
+.session {
+  width: 320px;
+}
+.speaker {
+  width: 240px;
+}
+.session-info article, .speaker aside {
+  margin: 1.333em 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.speaker {
+  float: left;
+}
+.session {
+  float: right;
+}
+.speaker aside {
+  position: absolute;
+  left: 240px;
+  text-align: center;
+}
+.photo {
+  position: absolute;
+  top: 1.5em;
+  left: 47.5px;
+  border-radius: 35px;
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  -o-transition: box-shadow 1s;
+  -ms-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+.session-info:hover .photo {
+  box-shadow: 0 0 25px #646365;
+}
+.speaker aside {
+  top: 6em;
+  width: 160px;
+}
+#content .active {
+  max-height: 1500px;
+  overflow: hidden;
+}
+#content .active:hover {
+  background: none; }
+#content .active article, #content .active aside {
+  opacity: 1;
+}
+#content .active .speaker, #content .active .session {
+  vertical-align: top;
+}
+.speakerssessionstemplate h2+p {
+  margin: 6.666em 0 2.666em 80px;
+  text-indent: 0;
+}
+#startup .fn {
+  font-size: 1.5em;
+  line-height: 1.25em; }
+
+/* IE section for fixing sessions page */
+*:first-child+html .session-info, * html .session-info {
+  padding-top: 2.666em;
+  max-height: 1500px;
+  overflow: hidden; }
+*:first-child+html .session-info h3, * html .session-info h3 {
+  margin: 0; }
+*:first-child+html .session-info article, *:first-child+html .speaker aside, * html .session-info article, * html .speaker aside {
+  margin-bottom: 0; }
+*:first-child+html .speaker aside, * html .speaker aside {
+  top: 9.1em; }
+*:first-child+html .session-info aside, * html .session-info aside {
+  opacity: 1; }
+*:first-child+html .photo, * html .session-info .photo {
+      top: 2.3em; }
+*:first-child+html .session-info:hover, * html .session-info:hover {
+      border-bottom-color: #514f53; }
+*:first-child+html .speakerssessionstemplate h2, * html .speakerssessionstemplate h2 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  line-height: 1.5em; }
+@media \0screen {
+  .session-info {
+      padding-top: 2.666em;
+      max-height: 1500px;
+      overflow: hidden; }
+  .session-info h3 {
+      margin: 0; }
+  .session-info article, .speaker aside {
+      margin-bottom: 0; }
+  .speaker aside {
+      top: 9.1em; }
+  .session-info aside {
+      opacity: 1; }
+  .photo {
+      top: 2.3em; }
+  .session-info:hover .fn {
+      color: #39c; }
+  .session-info:hover {
+      background: none; }
+  .session-info:hover {
+      border-bottom-color: #514f53; }
+  .speakerssessionstemplate h2 {
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      line-height: 1.5em;
+      text-align: center;
+      right: 35%;
+      width: 6em; }
+}	
+
+#sponsors {
+  margin: 2em auto 0 auto;
+  width: 100%;
+}
+#sponsors h3 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  color: #6c6c6f;
+}
+#sponsors ul {
+  margin: 0;
+  padding-bottom: 1.7em;
+}
+#sponsors ul li {
+  float: left;
+  display: inline-block;
+  margin: 0 0 1.7em 0;
+  background: transparent;
+  vertical-align: top;
+  background-color: #fff;
+  min-height: 120px;
+  height: auto;
+  width: 30%;
+}
+#sponsors ul li:nth-of-type(3n-1) {
+  margin: 0 5%;
+}
+#sponsors p {
+  margin: 0;
+}
+#sponsors a {
+  display: block;
+  -webkit-transition: .6s all;
+}
+#sponsors a:hover {
+  background-color: #fff;
+}
+#sponsors li:hover h4 {
+  background-color: #39c;
+  -webkit-transition: all .5s;
+}
+#sponsors img {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  height: auto;
+  max-height: 70px;
+  filter: url(../images/filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome & Webkit Nightlies */
+  -o-filter: grayscale(1);
+}
+#sponsors li:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -o-filter: grayscale(0);
+}
+#sponsors h4 {
+  color: #fff;
+  top: 0;
+  left: 0;
+  background: #dadada;
+  padding: .4em .85em .3em .85em;
+  margin: 0 0 1em 0;
+  font-weight: bold;
+  background-color: #949494;
+  font-size: 1em;
+}
+
+#content #sponsors li:before {
+  content: "";
+  display: none;
+}
+#content p {
+  max-width: 480px;
+  text-indent: 2em;
+}
+#content p:first-child, #content h2+p, #content h3+p, #content h4+p, #content ul+p, #content ol+p {
+  text-indent: 0;
+}
+#content ul {
+  margin-bottom: .666em;
+}
+#content li {
+  margin-left: 2em;
+}
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+#content iframe {
+  margin: .666em 0 .666em 80px;
+  border: 2px solid #000;
+  border-radius: 1.333em;
+  -webkit-filter: grayscale(100%);
+}
+.locationDate {
+  width: 240px;
+  padding-left: 80px;
+}
+.locationDate .button, .submit {
+  display: block;
+  font-family: "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  background-color: #39c;
+  color: #fafeff;
+  padding: .333em 0;
+  margin: 1.333em 0;
+  text-align: center;
+  border: 0;
+}
+.locationDate .button:hover, .locationDate .button:focus {
+  background: #fafeff;
+  color: #39c;
+}
+#content .locationDate p, #content .locationDate+p {
+  text-indent: 0;
+}
+.locationDate strong {
+  width: 80px;
+  margin-left: -80px;
+  float: left;
+  clear: both;
+  font-weight: bold;
+}
+input {
+  border: 0;
+  border-bottom: 1px dashed #514f53;
+  background: 0;
+  padding: 0;
+  width: 320px;
+  color: #fafeff;
+  font: 15px/1.333em "Palatino Linotype", Palatino, "Book Antiqua", serif;
+}
+input:focus {
+  border-bottom-color: #716f73;
+}
+table {
+  width: 480px;
+  margin: 1.333em 0 2.666em 0;
+}
+th {
+  padding: 1.333em .666em .333em .666em;
+  border-bottom: 2px solid #39c;
+  text-align: left;
+  font-family: "Helvetica Light";
+  font-weight: 200;
+}
+td {
+  padding: .666em .666em 0 .666em;
+}
+.pricing td+td+td {
+  text-align: right;
+}
+.vcalendar {
+  width: 100%;
+}
+.vcalendar tbody th {
+  border-bottom: none;
+}
+.vcalendar .cal_break {
+  color: #949494;
+}
+h4, label {
+  font: 1.333em/1em "Helvetica Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  margin: .9em 0 .1em;
+  display: block;
+}
+footer {
+  width: 100%;
+  margin: 3em auto 0 auto;
+  padding-bottom: 2em;
+  overflow: auto;
+  color: #514f53;
+}
+footer a {
+  color: #716f73;
+}
+footer a:hover, footer a:focus {
+  color: #39c;
+  background: 0;
+}
+footer h4 {
+  color: #716f73;
+  margin-top: 0;
+}
+footer li {
+  margin: 0!important;
+}
+footer li:before {
+  content: ''!important;
+}
+#contact {
+  width: 320px;
+  float: left;
+}
+#links {
+  float: left;
+}
+#copyright {
+  float: right;
+  width: 160px;
+  text-align: right;
+}
+.panel {
+  overflow: hidden;
+  height: 550px;
+  padding-top: 140px;
+  margin-top: -140px;
+  border-bottom: 2px solid #000;
+}
+h1 {
+  font: 3em/1em "Helvetica Neue CE 97 Black Condensed", "Helvetica Neue LT 97 Black Condensed", "Helvetica Neue 97 Black Condensed", "Helvetica Neue Black Condensed", "HelveticaNeue Black Condensed", "HelveticaNeue-BlackCondensed", "HelveticaNeue-Black-Condensed", "HelveticaNeueBlackCondensed", "Helvetica Neue CE 97 Condensed Black", "Helvetica Neue LT 97 Condensed Black", "Helvetica Neue 97 Condensed Black", "Helvetica Neue Condensed Black", "HelveticaNeue Condensed Black", "HelveticaNeue-CondensedBlack", "HelveticaNeue-Condensed-Black", "HelveticaNeueCondensedBlack", "HelveticaNeue CE 97 BlackCn", "HelveticaNeue LT 97 BlackCn", "HelveticaNeue 97 BlackCn", "HelveticaNeue BlackCn", "HelveticaNeue-BlackCn", "Helvetica CE 97 Black Condensed", "Helvetica LT 97 Black Condensed", "Helvetica 97 Black Condensed", "Helvetica Black Condensed", "Helvetica-BlackCondensed", "Helvetica-Black-Condensed", "HelveticaBlackCondensed", "Helvetica CE 97 Condensed Black", "Helvetica LT 97 Condensed Black", "Helvetica 97 Condensed Black", "Helvetica Condensed Black", "Helvetica-CondensedBlack", "Helvetica-Condensed-Black", "Helvetica CE 97 BlackCn", "Helvetica LT 97 BlackCn", "Helvetica 97 BlackCn", "Helvetica BlackCn", "Helvetica-BlackCn", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-stretch: condensed;
+}
+#content li:before {
+  content: "»";
+  position: absolute;
+  margin-left: -1.5em;
+}
+
+
+/* W3C images next to their sponsored sessions */
+#webvtt-and-video-accessibility:after, #css-in-the-fourth-dimension:after, #beyond-html5-where-to-next:after {
+  float: left;
+  display: block;
+  content: "";
+  height: 30px;
+  width: 40px;
+  background: url(http://south12.webdirections.org/wp-content/themes/conf-theme-html5/images/w3c-speaker-image.png) no-repeat;
+  margin-right: .5em; }

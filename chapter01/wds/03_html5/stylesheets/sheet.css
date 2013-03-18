@@ -1,0 +1,24 @@
+#content .active {
+  max-height: 1500px;
+  overflow: hidden;
+}
+
+.session-info div {
+  margin: 1.333em 0;
+}
+
+#content .active div {
+  opacity: 1;
+}
+
+.session-info div div {
+  margin: 0;
+}
+
+.session-info h3 {
+  min-height: 60px;
+}
+
+.session-info h3.fn {
+  min-height: 0;
+}

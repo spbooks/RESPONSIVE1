@@ -1,0 +1,13 @@
+@import "query.scss";
+
+@media only screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  #sponsors {
+    max-width: $desktop-width;
+    width: 100%;
+  }
+
+  #sponsors ul li {
+    margin: 0 0.4% 1em 0.8%;
+    width: 31.5%;
+  }
+}

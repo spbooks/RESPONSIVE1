@@ -1,0 +1,12 @@
+#sponsors {
+  width: 960px;
+}
+
+#sponsors ul {
+  padding-left: 3px;
+}
+
+#sponsors ul li {
+  margin: 0 6px 15px 6px;
+  width: 302px;
+}

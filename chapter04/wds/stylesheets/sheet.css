@@ -1,0 +1,69 @@
+body {
+  background: #211F23;
+  color: #FAFEFF;
+  font: 15px/1.333em "Palatino Linotype", Palatino, "Book Antiqua", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#sponsors {
+  margin: 2em auto 0 auto;
+  width: 480px;
+}
+
+#sponsors ul {
+  margin: 0;
+  padding-bottom: 1.7em;
+}
+
+#sponsors ul li {
+  background-color: #FFF;
+  display: inline-block;
+  height: auto;
+  margin: 0 5px 1.7em 5px;
+  min-height: 120px;
+  vertical-align: top;
+  width: 470px;
+}
+
+#sponsors h4 {
+  background-color: #949494;
+  color: #FFFFFF;
+  font: bold 1em/1 Helvetica, Arial, sans-serif;
+  margin: 0 0 1em 0;
+  padding: .4em .85em .3em .85em;
+}
+
+#sponsors li:hover h4 {
+  background-color: #3399CC;
+  -webkit-transition: all .5s;
+}
+
+#sponsors a {
+  display: block;
+  -webkit-transition: .6s all;
+}
+
+#sponsors a:hover {
+  background-color: #FFFFFF;
+}
+
+#sponsors img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-height: 70px;
+  max-width: 80%;
+  filter: url(../images/filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
+
+#sponsors li:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -o-filter: grayscale(0);
+}

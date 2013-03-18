@@ -1,0 +1,52 @@
+#panel1 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-1-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+/* panel-2-bg-max.jpg"); */
+#panel2 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-1-bg-max.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#panel3 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-3-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#panel4 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-4-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#panel5 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-5-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#panel6 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-6-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+#panel7 {
+  background-image: url("http://static.webdirections.org/webdirections/south12/wp-content/themes/conf-theme-html5/images/panel-7-bg-max.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+  
+@media only screen and (min-width:1565px) {
+  .panel {
+    background-size: 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%
+  }
+}

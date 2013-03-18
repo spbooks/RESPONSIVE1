@@ -1,0 +1,38 @@
+body {
+  background-image: url("../img/panel-1-bg-max.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 96%;
+}
+
+#main footer {
+  padding: 0 12px;
+  width: auto;
+}
+
+nav {
+  float: right;
+  left: auto;
+  position: relative;
+  top: -120px;
+  width: 480px;
+}
+
+#main .panel {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.session {
+  text-align: justify;
+}
+
+.speaker {
+  text-align: justify;
+}

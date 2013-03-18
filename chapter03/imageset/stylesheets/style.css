@@ -1,0 +1,31 @@
+#set {
+  background-image: url(../images/1_oppa.png);
+  background-image: -webkit-image-set(
+    url(../images/2_gangnam.png) 1x,
+    url(../images/3_style.png) 2x
+  );
+  background-image: -moz-image-set(
+    url(../images/2_gangnam.png) 1x,
+    url(../images/3_style.png) 2x
+  );
+  background-image: -ms-image-set(
+    url(../images/2_gangnam.png) 1x,
+    url(../images/3_style.png) 2x
+  );
+  background-image: -o-image-set(
+    url(../images/2_gangnam.png) 1x,
+    url(../images/3_style.png) 2x
+  );
+  background-image: image-set(
+    url(../images/2_gangnam.png) 1x,
+    url(../images/3_style.png) 2x
+  );
+  background-repeat: no-repeat;
+  background-size: 12%;
+  height: 640px;
+  width: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #set { background-size: 50%; }
+}

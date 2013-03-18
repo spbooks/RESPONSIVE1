@@ -1,0 +1,51 @@
+$avatar-radius: 45px;
+$scale: 1;
+
+#content .active {
+  max-height: 1500px;
+  overflow: hidden;
+}
+
+#panel2 {
+  background-image: url("../img/panel-1-bg-max.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.session-info div {
+  margin: 1.333em 0;
+}
+
+#content .active div {
+  opacity: 1;
+}
+
+.session-info div div {
+  margin: 0;
+}
+
+.session-info h3 {
+  min-height: 60px;
+}
+
+.session-info h3.fn {
+  min-height: 0;
+}
+ 
+/* avatars */
+
+@mixin avatar($scale) {
+  border-radius: $avatar-radius*$scale;
+  width: $avatar-radius*2*$scale;
+}
+
+#content div.speaker img {
+  @include avatar(1);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content div.speaker img {
+    @include avatar(2); 
+  }
+}

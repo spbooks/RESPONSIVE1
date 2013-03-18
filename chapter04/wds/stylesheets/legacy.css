@@ -1,0 +1,77 @@
+#sponsors {
+  margin: 2em auto 0 auto;
+  width: 800px;
+}
+
+#sponsors h3 {
+  color: #6C6C6F;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+#sponsors ul {
+  margin: 0;
+  padding-bottom: 1.7em;
+}
+
+#sponsors ul li {
+  background-color: #FFFFFF;
+  display: inline-block;
+  float: left;
+  height: auto;
+  margin: 0 0 1.7em 0;
+  min-height: 120px;
+  vertical-align: top;
+  width: 30%;
+}
+
+#sponsors ul li:nth-of-type(3n-1) {
+  margin: 0 5%;
+}
+
+#sponsors p {
+  margin: 0;
+}
+
+#sponsors a {
+  display: block;
+  -webkit-transition: .6s all;
+}
+
+#sponsors a:hover {
+  background-color: #FFFFFF;
+}
+
+#sponsors li:hover h4 {
+  background-color: #3399CC;
+  -webkit-transition: all .5s;
+}
+
+#sponsors img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 80%;
+  max-height: 70px;
+  filter: url(../images/filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
+
+#sponsors li:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -o-filter: grayscale(0);
+}
+
+#sponsors h4 {
+  background-color: #949494;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: bold;
+  left: 0;
+  margin: 0 0 1em 0;
+  padding: .4em .85em .3em .85em;
+  top: 0;
+}
